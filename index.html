@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Configuração de caracteres e responsividade -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título que aparece na aba do navegador -->
     <title>Camila Santos | Dev Portfolio</title>
+    
+    <!-- Framework Tailwind CSS para estilização rápida -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!--Importando o font awesome para os ícones-->
-    <link rel="stylesheet" href="css/style.css"> <!--Importando o css-->
+    
+    <!-- Font Awesome para os ícones (GitHub, LinkedIn, Email, etc) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Nosso arquivo CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="font-sans">
+    <!-- ========================================
+         BARRA DE NAVEGAÇÃO (Menu fixo no topo)
+         ======================================== -->
     <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-purple-900/30">
         <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <span class="text-2xl font-bold tracking-tighter text-purple-accent">CS<span class="text-white">.</span></span>
+            <!-- Logo/Iniciais -->
+            <span class="text-2xl font-bold tracking-tighter text-purple-accent">
+                CS<span class="text-white">.</span>
+            </span>
+            
+            <!-- Menu de navegação (escondido em mobile, visível em telas médias/grandes) -->
             <div class="hidden md:flex space-x-8">
                 <a href="#inicio" class="hover:text-purple-accent transition">Início</a>
                 <a href="#sobre" class="hover:text-purple-accent transition">Sobre</a>
@@ -21,39 +39,75 @@
         </div>
     </nav>
 
+
+    <!-- ========================================
+         SEÇÃO INICIAL (Hero/Apresentação)
+         id="inicio" permite navegação pelo menu
+         ======================================== -->
     <section id="inicio" class="h-screen flex items-center justify-center gradient-bg px-4">
         <div class="text-center">
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-4">Camila <span class="text-purple-accent">Santos</span> </h1>
-            <p class="text-xl md:text-2xl text-gray-400 mb-8">Estudante de Sistemas de Informação & Desenvolvedora Back-end em formação</p>
+            <!-- Nome principal -->
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4">
+                Camila <span class="text-purple-accent">Santos</span>
+            </h1>
+            
+            <!-- Descrição/Subtítulo -->
+            <p class="text-xl md:text-2xl text-gray-400 mb-8">
+                Estudante de Sistemas de Informação & Desenvolvedora Back-end em formação
+            </p>
+            
+            <!-- Botões de ação -->
             <div class="flex justify-center gap-4">
-                <a href="#projetos" class="bg-purple-accent hover:bg-purple-700 text-white px-8 py-3 rounded-full font-bold transition">Ver Projetos</a>
-                <a href="#contato" class="border border-purple-accent text-purple-accent hover:bg-purple-accent/10 px-8 py-3 rounded-full font-bold transition">Contato</a>
+                <a href="#projetos" class="bg-purple-accent hover:bg-purple-700 text-white px-8 py-3 rounded-full font-bold transition">
+                    Ver Projetos
+                </a>
+                <a href="#contato" class="border border-purple-accent text-purple-accent hover:bg-purple-accent/10 px-8 py-3 rounded-full font-bold transition">
+                    Contato
+                </a>
             </div>
         </div>
     </section>
 
+
+    <!-- ========================================
+         SEÇÃO SOBRE MIM
+         Layout em 2 colunas: imagem + texto
+         ======================================== -->
     <section id="sobre" class="py-20 px-4 max-w-6xl mx-auto">
         <div class="grid md:grid-cols-2 gap-12 items-center">
+            
+            <!-- Coluna da esquerda: Foto com efeito de brilho -->
             <div class="relative group">
-    <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-fuchsia-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-    
-    <div class="relative w-full h-96 overflow-hidden rounded-2xl border-2 border-purple-accent/50">
-    <img src="C:\Users\camil\Downloads\fotoCamila.jpeg" 
-         alt="Camila Santos" 
-         class="w-full h-full object-cover transition duration-500">
-</div>
+                <!-- Efeito de brilho roxo atrás da imagem (aparece ao passar o mouse) -->
+                <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-fuchsia-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                
+                <!-- Container da imagem -->
+                <div class="relative w-full h-96 overflow-hidden rounded-2xl border-2 border-purple-accent/50">
+                    <img src="C:\Users\camil\Downloads\fotoCamila.jpeg" 
+                         alt="Camila Santos" 
+                         class="w-full h-full object-cover transition duration-500">
+                </div>
             </div>
+            
+            <!-- Coluna da direita: Informações pessoais -->
             <div>
+                <!-- Título da seção com barra roxa na lateral -->
                 <h2 class="text-3xl font-bold mb-6 border-l-4 border-purple-accent pl-4">Sobre Mim</h2>
+                
+                <!-- Primeiro parágrafo: Apresentação -->
                 <p class="text-gray-300 mb-4 leading-relaxed">
                     Atualmente cursando Sistemas de Informação na **UFLA**, com foco em desenvolvimento de software e constante aprimoramento técnico.
                     Possuo experiência com linguagens como Java e C++, além de interesse em boas práticas de programação, organização de código e resolução de problemas. 
                     Busco aprender continuamente e aplicar meus conhecimentos em projetos práticos e desafiadores. 
                 </p>
+                
+                <!-- Segundo parágrafo: Experiência -->
                 <p class="text-gray-300 mb-6">
                     Minha jornada inclui um sistema de gerenciamento para a compra de ingressos em eventos, desenvolvido em C++, com uma interface de linha de comando (CLI) interativa e persistência de dados em arquivo CSV. E também a criação de jogo 2D na IDE educacional Greenfoot. 
                     Noção basica de git e github.
                 </p>
+                
+                <!-- Tags de tecnologias -->
                 <div class="flex gap-4">
                     <span class="bg-purple-900/40 text-purple-300 px-3 py-1 rounded text-sm border border-purple-800">Java</span>
                     <span class="bg-purple-900/40 text-purple-300 px-3 py-1 rounded text-sm border border-purple-800">C++</span>
@@ -62,27 +116,44 @@
         </div>
     </section>
 
+
+    <!-- ========================================
+         SEÇÃO DE PROJETOS
+         Grid de 3 colunas com cards de projetos
+         ======================================== -->
     <section id="projetos" class="py-20 bg-zinc-950 px-4">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-center">Meus <span class="text-purple-accent">Projetos</span></h2>
+            <!-- Título da seção -->
+            <h2 class="text-3xl font-bold mb-12 text-center">
+                Meus <span class="text-purple-accent">Projetos</span>
+            </h2>
+            
+            <!-- Grid de projetos (3 colunas em desktop, 1 em mobile) -->
             <div class="grid md:grid-cols-3 gap-8">
                 
+                <!-- Card do Projeto 1: Vikings vs Goblins -->
                 <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-xl card-hover">
                     <h3 class="text-xl font-bold mb-2 text-purple-300">VIKINGS vs GOBLINS</h3>
-                    <p class="text-gray-400 text-sm mb-4">Jogo de plataforma 2D desenvolvido em Java usando o framework Greenfoot, focado em lógica de POO e herança.</p>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Jogo de plataforma 2D desenvolvido em Java usando o framework Greenfoot, focado em lógica de POO e herança.
+                    </p>
                     <a href="https://github.com/Camilasnasc/VikingVsGoblin" target="_blank" class="text-purple-accent hover:underline flex items-center gap-2">
                         Ver no GitHub <i class="fab fa-github"></i>
                     </a>
                 </div>
 
+                <!-- Card do Projeto 2: Sistema de Ingressos -->
                 <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-xl card-hover">
                     <h3 class="text-xl font-bold mb-2 text-purple-300">Ingressos-main</h3>
-                    <p class="text-gray-400 text-sm mb-4">Projeto em C++ para gerenciamento de dados com persistência em arquivos CSV, incluindo operações de cadastro, leitura, atualização e exclusão de registros.</p>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Projeto em C++ para gerenciamento de dados com persistência em arquivos CSV, incluindo operações de cadastro, leitura, atualização e exclusão de registros.
+                    </p>
                     <a href="https://github.com/Camilasnasc/ingressos-main" target="_blank" class="text-purple-accent hover:underline flex items-center gap-2">
                         Ver no GitHub <i class="fab fa-github"></i>
                     </a>
                 </div>
 
+                <!-- Card do Projeto 3: Placeholder para futuros projetos -->
                 <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-xl card-hover">
                     <h3 class="text-xl font-bold mb-2 text-purple-300">Em breve...</h3>
                     <p class="text-gray-400 text-sm mb-4">...</p>
@@ -95,21 +166,55 @@
         </div>
     </section>
 
+
+    <!-- ========================================
+         SEÇÃO DE CONTATO
+         Exibe redes sociais e formas de contato
+         ======================================== -->
     <section id="contato" class="py-20 px-4 max-w-4xl mx-auto">
         <div class="bg-purple-900/10 border border-purple-500/30 p-10 rounded-3xl text-center">
+            <!-- Título da seção -->
             <h2 class="text-3xl font-bold mb-4">Vamos trabalhar juntos?</h2>
-            <p class="text-gray-400 mb-8">Estou aberta a oportunidades de estágio e projetos colaborativos.</p>
+            
+            <!-- Texto descritivo -->
+            <p class="text-gray-400 mb-8">
+                Estou aberta a oportunidades de estágio e projetos colaborativos.
+            </p>
+            
+            <!-- Ícones de redes sociais (email, GitHub, LinkedIn) -->
             <div class="flex justify-center gap-6 text-3xl">
-                <a href="mailto:camila.san.nascimento@gmail.com" class="hover:text-purple-accent transition"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/Camilasnasc" target="_blank" class="hover:text-purple-accent transition"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/camila-santos-nascimento-84676a294/" class="hover:text-purple-accent transition"><i class="fab fa-linkedin"></i></a>
+                <!-- Email: abre o cliente de email -->
+                <a href="mailto:camila.san.nascimento@gmail.com" class="hover:text-purple-accent transition">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                
+                <!-- GitHub: abre em nova aba (target="_blank") -->
+                <a href="https://github.com/Camilasnasc" target="_blank" class="hover:text-purple-accent transition">
+                    <i class="fab fa-github"></i>
+                </a>
+                
+                <!-- LinkedIn: abre em nova aba -->
+                <a href="https://www.linkedin.com/in/camila-santos-nascimento-84676a294/" target="_blank" class="hover:text-purple-accent transition">
+                    <i class="fab fa-linkedin"></i>
+                </a>
             </div>
         </div>
     </section>
 
+    <!-- ========================================
+         RODAPÉ
+         Informações de copyright
+         ======================================== -->
     <footer class="py-10 text-center text-gray-600 border-t border-zinc-900">
-        <p>&copy; 2026 Camila Santos Nascimento. Desenvolvido com <span class="text-purple-accent">&hearts;</span>.</p>
+        <p>
+            &copy; 2026 Camila Santos Nascimento. Desenvolvido com <span class="text-purple-accent">&hearts;</span>.
+        </p>
     </footer>
 
+    <!-- ========================================
+         JAVASCRIPT
+         Script que adiciona o efeito de scroll suave
+         ======================================== -->
+    <script src="js/main.js"></script>
 </body>
 </html>

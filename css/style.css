@@ -1,11 +1,116 @@
-/* Importando para o css pois separamos o css do html para melhor organização */
+/* =====================================================
+   ARQUIVO CSS PERSONALIZADO
+   
+   Este arquivo contém estilos adicionais ao Tailwind CSS
+   Aqui definimos classes customizadas e cores do tema
+===================================================== */
 
-.body { background-color: #0b0b0b; color: #e5e7eb; }
-.text-purple-accent { color: #a855f7; }
-.bg-purple-accent { background-color: #a855f7; }
-.border-purple-accent { border-color: #7c3aed; }
-.gradient-bg { background: linear-gradient(135deg, #0b0b0b 0%, #1e1b4b 100%); }
-.card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; border-color: #a855f7; }
+
+/* =====================================================
+   CONFIGURAÇÃO GLOBAL
+===================================================== */
+
+/* Scroll suave nativo do navegador */
+html {
+    scroll-behavior: smooth; /* Faz a rolagem ser suave ao clicar em links */
+}
+
+
+/* =====================================================
+   CORES PERSONALIZADAS DO TEMA ROXO
+   
+   Estas classes são usadas no HTML com Tailwind
+   Exemplo: <span class="text-purple-accent">Texto</span>
+===================================================== */
+
+/* Cor de fundo do body (preto escuro) */
+.body { 
+    background-color: #0b0b0b;  /* Preto bem escuro */
+    color: #e5e7eb;              /* Texto cinza claro */
+}
+
+/* Cor do texto roxo (acento) */
+.text-purple-accent { 
+    color: #a855f7;  /* Roxo vibrante - usado em destaques */
+}
+
+/* Cor de fundo roxa */
+.bg-purple-accent { 
+    background-color: #a855f7;  /* Roxo vibrante - usado em botões */
+}
+
+/* Cor de borda roxa */
+.border-purple-accent { 
+    border-color: #7c3aed;  /* Roxo mais escuro - usado em bordas */
+}
+
+
+/* =====================================================
+   GRADIENTES E EFEITOS ESPECIAIS
+===================================================== */
+
+/* Gradiente de fundo (preto para roxo escuro) */
+.gradient-bg { 
+    background: linear-gradient(135deg, #0b0b0b 0%, #1e1b4b 100%);
+    /* 135deg = diagonal
+       #0b0b0b = preto (início)
+       #1e1b4b = roxo escuro (fim) */
+}
+
+
+/* =====================================================
+   ANIMAÇÕES E INTERAÇÕES
+===================================================== */
+
+/* Efeito de hover nos cards de projetos */
+.card-hover:hover { 
+    transform: translateY(-5px);      /* Move o card 5px para cima */
+    transition: all 0.3s ease;        /* Transição suave de 0.3 segundos */
+    border-color: #a855f7;            /* Muda a cor da borda para roxo */
+}
+/* Resultado: Ao passar o mouse, o card "levanta" suavemente */
+
+
+/* =====================================================
+   DICAS PARA ADICIONAR MAIS ESTILOS:
+===================================================== */
+
+/* 
+   1. Animação de fade-in (aparecer suavemente):
+   
+   .fade-in {
+       animation: fadeIn 1s ease-in;
+   }
+   
+   @keyframes fadeIn {
+       from { opacity: 0; }
+       to { opacity: 1; }
+   }
+   
+
+   2. Botão com efeito de pulsar:
+   
+   .pulse-button {
+       animation: pulse 2s infinite;
+   }
+   
+   @keyframes pulse {
+       0%, 100% { transform: scale(1); }
+       50% { transform: scale(1.05); }
+   }
+   
+
+   3. Sombra animada:
+   
+   .glow-effect {
+       box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+       transition: box-shadow 0.3s ease;
+   }
+   
+   .glow-effect:hover {
+       box-shadow: 0 0 40px rgba(168, 85, 247, 0.8);
+   }
+*/
 
 
 
