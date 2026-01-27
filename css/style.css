@@ -71,6 +71,31 @@ html {
 /* Resultado: Ao passar o mouse, o card "levanta" suavemente */
 
 
+/* Efeito de sublinhado animado nos links do menu */
+nav a {
+    position: relative;               /* Necessário para posicionar o sublinhado */
+    display: inline-block;            /* Para o efeito funcionar corretamente */
+}
+
+/* Cria o sublinhado invisível inicialmente */
+nav a::after {
+    content: '';                      /* Elemento vazio */
+    position: absolute;               /* Posicionamento absoluto */
+    bottom: -4px;                     /* 4px abaixo do texto */
+    left: 0;                          /* Começa da esquerda */
+    width: 0;                         /* Largura inicial zero (invisível) */
+    height: 2px;                      /* Altura da linha */
+    background-color: #a855f7;        /* Cor roxa */
+    transition: width 0.3s ease;      /* Animação suave da largura */
+}
+
+/* Quando passa o mouse, o sublinhado aparece */
+nav a:hover::after {
+    width: 100%;                      /* Sublinhado ocupa toda a largura */
+}
+/* Resultado: Sublinhado roxo aparece suavemente da esquerda para direita */
+
+
 /* =====================================================
    DICAS PARA ADICIONAR MAIS ESTILOS:
 ===================================================== */
