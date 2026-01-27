@@ -51,10 +51,69 @@ html {
 
 /* Gradiente de fundo (preto para roxo escuro) */
 .gradient-bg { 
-    background: linear-gradient(135deg, #0b0b0b 0%, #1e1b4b 100%);
-    /* 135deg = diagonal
-       #0b0b0b = preto (início)
-       #1e1b4b = roxo escuro (fim) */
+    background: linear-gradient(180deg, #0b0b0b 0%, #1e1b4b 100%);
+    /* 180deg = de cima para baixo (vertical)
+       #0b0b0b = preto (topo)
+       #1e1b4b = roxo escuro (base) */
+}
+
+/* Gradiente de transição da seção sobre (roxo escuro para preto) */
+.gradient-to-black {
+    background: linear-gradient(to bottom, 
+        #1e1b4b 0%,      /* Roxo escuro - conecta perfeitamente com seção anterior */
+        #19173a 10%,     /* Roxo intermediário */
+        #14122b 25%,     /* Roxo mais escuro */
+        #0f0e20 40%,     /* Quase preto com leve tom roxo */
+        #0b0b0b 60%,     /* Preto escuro */
+        #000000 100%     /* Preto total */
+    );
+    /* Transição ultra suave e gradual sem linha visível */
+}
+
+/* Gradiente para seção de projetos (preto para cinza escuro) */
+.gradient-projects {
+    background: linear-gradient(to bottom,
+        #000000 0%,       /* Preto total - conecta com seção anterior */
+        #0a0a0a 20%,      /* Preto levemente mais claro */
+        #121212 40%,      /* Cinza muito escuro */
+        #18181b 70%,      /* Cinza escuro (zinc-950) */
+        #1a1a1d 100%      /* Cinza escuro mais claro */
+    );
+}
+
+/* Gradiente para seção de contato (cinza escuro para preto) */
+.gradient-contact {
+    background: linear-gradient(to bottom,
+        #1a1a1d 0%,       /* Cinza escuro - conecta com seção anterior */
+        #18181b 15%,      /* Cinza escuro (zinc-950) */
+        #121212 35%,      /* Cinza muito escuro */
+        #0a0a0a 60%,      /* Preto levemente mais claro */
+        #050505 85%,      /* Quase preto */
+        #000000 100%      /* Preto total - conecta com footer */
+    );
+}
+
+/* Fundo sólido preto para o footer */
+.bg-footer {
+    background-color: #000000;  /* Preto total */
+}
+
+/* Remove qualquer espaçamento que possa causar linha entre seções */
+#inicio,
+#sobre,
+#projetos,
+#contato {
+    margin: 0 !important;
+}
+
+section {
+    border: none !important;        /* Remove qualquer borda */
+    outline: none !important;       /* Remove qualquer outline */
+}
+
+footer {
+    margin: 0 !important;
+    border: none !important;
 }
 
 
@@ -94,6 +153,25 @@ nav a:hover::after {
     width: 100%;                      /* Sublinhado ocupa toda a largura */
 }
 /* Resultado: Sublinhado roxo aparece suavemente da esquerda para direita */
+
+
+/* =====================================================
+   ANIMAÇÃO DE SCROLL (Fade In)
+===================================================== */
+
+/* Estado inicial: elemento invisível e deslocado para baixo */
+.fade-in-element {
+    opacity: 0;                       /* Invisível */
+    transform: translateY(30px);      /* 30px abaixo da posição final */
+    transition: opacity 0.8s ease, transform 0.8s ease;  /* Transição suave */
+}
+
+/* Estado ativo: elemento visível quando entra na tela */
+.fade-in-element.visible {
+    opacity: 1;                       /* Totalmente visível */
+    transform: translateY(0);         /* Na posição original */
+}
+/* Resultado: Elementos aparecem suavemente ao rolar a página */
 
 
 /* =====================================================

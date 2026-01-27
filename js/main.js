@@ -56,6 +56,47 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // =====================================================
+//  FUNÇÃO: Animação de Fade In ao Scroll
+//  
+//  O que faz:
+//  - Detecta quando elementos entram na tela durante o scroll
+//  - Adiciona classe 'visible' para ativar animação
+//  - Usa Intersection Observer para melhor performance
+// =====================================================
+
+// Função para observar elementos e animar quando aparecerem
+function observeElements() {
+    // Seleciona todos os elementos com a classe 'fade-in-element'
+    const fadeElements = document.querySelectorAll('.fade-in-element');
+    
+    // Configura o observador de interseção
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            // Se o elemento está visível na tela (intersecting)
+            if (entry.isIntersecting) {
+                // Adiciona a classe 'visible' para ativar a animação
+                entry.target.classList.add('visible');
+                
+                // Para de observar este elemento (animação acontece só uma vez)
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,  // Ativa quando 10% do elemento está visível
+        rootMargin: '0px 0px -50px 0px'  // Ativa um pouco antes de entrar totalmente
+    });
+    
+    // Observa cada elemento encontrado
+    fadeElements.forEach(element => {
+        observer.observe(element);
+    });
+}
+
+// Executa a função quando a página carregar
+document.addEventListener('DOMContentLoaded', observeElements);
+
+
+// =====================================================
 //  DICAS PARA ADICIONAR MAIS FUNCIONALIDADES:
 // =====================================================
 // 
