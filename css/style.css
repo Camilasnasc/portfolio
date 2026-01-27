@@ -1,0 +1,13 @@
+/* Importando para o css pois separamos o css do html para melhor organização */
+
+.body { background-color: #0b0b0b; color: #e5e7eb; }
+.text-purple-accent { color: #a855f7; }
+.bg-purple-accent { background-color: #a855f7; }
+.border-purple-accent { border-color: #7c3aed; }
+.gradient-bg { background: linear-gradient(135deg, #0b0b0b 0%, #1e1b4b 100%); }
+.card-hover:hover { transform: translateY(-5px); transition: all 0.3s ease; border-color: #a855f7; }
+
+
+
+
+
