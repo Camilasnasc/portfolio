@@ -17,31 +17,31 @@ html {
 
 
 /* =====================================================
-   CORES PERSONALIZADAS DO TEMA ROXO
-   
+   CORES PERSONALIZADAS DO TEMA ESMERALDA
+
    Estas classes são usadas no HTML com Tailwind
-   Exemplo: <span class="text-purple-accent">Texto</span>
+   Exemplo: <span class="text-emerald-accent">Texto</span>
 ===================================================== */
 
 /* Cor de fundo do body (preto escuro) */
-.body { 
+.body {
     background-color: #0b0b0b;  /* Preto bem escuro */
     color: #e5e7eb;              /* Texto cinza claro */
 }
 
-/* Cor do texto roxo (acento) */
-.text-purple-accent { 
-    color: #a855f7;  /* Roxo vibrante - usado em destaques */
+/* Cor do texto esmeralda (acento) */
+.text-emerald-accent {
+    color: #10b981;  /* Verde esmeralda vibrante - usado em destaques */
 }
 
-/* Cor de fundo roxa */
-.bg-purple-accent { 
-    background-color: #a855f7;  /* Roxo vibrante - usado em botões */
+/* Cor de fundo esmeralda */
+.bg-emerald-accent {
+    background-color: #10b981;  /* Verde esmeralda vibrante - usado em botões */
 }
 
-/* Cor de borda roxa */
-.border-purple-accent { 
-    border-color: #7c3aed;  /* Roxo mais escuro - usado em bordas */
+/* Cor de borda esmeralda */
+.border-emerald-accent {
+    border-color: #059669;  /* Verde esmeralda mais escuro - usado em bordas */
 }
 
 
@@ -49,23 +49,23 @@ html {
    GRADIENTES E EFEITOS ESPECIAIS
 ===================================================== */
 
-/* Gradiente de fundo (preto para roxo escuro) */
-.gradient-bg { 
-    background: linear-gradient(180deg, #0b0b0b 0%, #1e1b4b 100%);
+/* Gradiente de fundo (preto para verde escuro) */
+.gradient-bg {
+    background: linear-gradient(180deg, #0b0b0b 0%, #022c22 100%);
     /* 180deg = de cima para baixo (vertical)
        #0b0b0b = preto (topo)
-       #1e1b4b = roxo escuro (base) */
+       #022c22 = verde esmeralda escuro (base) */
 }
 
-/* Gradiente de transição da seção sobre (roxo escuro para preto) */
+/* Gradiente de transição da seção sobre (verde escuro para preto) */
 .gradient-to-black {
-    background: linear-gradient(to bottom, 
-        #1e1b4b 0%,      /* Roxo escuro - conecta perfeitamente com seção anterior */
-        #19173a 10%,     /* Roxo intermediário */
-        #14122b 25%,     /* Roxo mais escuro */
-        #0f0e20 40%,     /* Quase preto com leve tom roxo */
-        #0b0b0b 60%,     /* Preto escuro */
-        #000000 100%     /* Preto total */
+    background: linear-gradient(to bottom,
+    #022c22 0%,      /* Verde escuro - conecta perfeitamente com seção anterior */
+    #04241d 10%,     /* Verde intermediário */
+    #041b16 25%,     /* Verde mais escuro */
+    #0a120f 40%,     /* Quase preto com leve tom verde */
+    #0b0b0b 60%,     /* Preto escuro */
+    #000000 100%     /* Preto total */
     );
     /* Transição ultra suave e gradual sem linha visível */
 }
@@ -73,23 +73,23 @@ html {
 /* Gradiente para seção de projetos (preto para cinza escuro) */
 .gradient-projects {
     background: linear-gradient(to bottom,
-        #000000 0%,       /* Preto total - conecta com seção anterior */
-        #0a0a0a 20%,      /* Preto levemente mais claro */
-        #121212 40%,      /* Cinza muito escuro */
-        #18181b 70%,      /* Cinza escuro (zinc-950) */
-        #1a1a1d 100%      /* Cinza escuro mais claro */
+    #000000 0%,       /* Preto total - conecta com seção anterior */
+    #0a0a0a 20%,      /* Preto levemente mais claro */
+    #121212 40%,      /* Cinza muito escuro */
+    #18181b 70%,      /* Cinza escuro (zinc-950) */
+    #1a1a1d 100%      /* Cinza escuro mais claro */
     );
 }
 
 /* Gradiente para seção de contato (cinza escuro para preto) */
 .gradient-contact {
     background: linear-gradient(to bottom,
-        #1a1a1d 0%,       /* Cinza escuro - conecta com seção anterior */
-        #18181b 15%,      /* Cinza escuro (zinc-950) */
-        #121212 35%,      /* Cinza muito escuro */
-        #0a0a0a 60%,      /* Preto levemente mais claro */
-        #050505 85%,      /* Quase preto */
-        #000000 100%      /* Preto total - conecta com footer */
+    #1a1a1d 0%,       /* Cinza escuro - conecta com seção anterior */
+    #18181b 15%,      /* Cinza escuro (zinc-950) */
+    #121212 35%,      /* Cinza muito escuro */
+    #0a0a0a 60%,      /* Preto levemente mais claro */
+    #050505 85%,      /* Quase preto */
+    #000000 100%      /* Preto total - conecta com footer */
     );
 }
 
@@ -122,10 +122,10 @@ footer {
 ===================================================== */
 
 /* Efeito de hover nos cards de projetos */
-.card-hover:hover { 
+.card-hover:hover {
     transform: translateY(-5px);      /* Move o card 5px para cima */
     transition: all 0.3s ease;        /* Transição suave de 0.3 segundos */
-    border-color: #a855f7;            /* Muda a cor da borda para roxo */
+    border-color: #10b981;            /* Muda a cor da borda para verde esmeralda */
 }
 /* Resultado: Ao passar o mouse, o card "levanta" suavemente */
 
@@ -144,7 +144,7 @@ nav a::after {
     left: 0;                          /* Começa da esquerda */
     width: 0;                         /* Largura inicial zero (invisível) */
     height: 2px;                      /* Altura da linha */
-    background-color: #a855f7;        /* Cor roxa */
+    background-color: #10b981;        /* Cor verde esmeralda */
     transition: width 0.3s ease;      /* Animação suave da largura */
 }
 
@@ -152,7 +152,7 @@ nav a::after {
 nav a:hover::after {
     width: 100%;                      /* Sublinhado ocupa toda a largura */
 }
-/* Resultado: Sublinhado roxo aparece suavemente da esquerda para direita */
+/* Resultado: Sublinhado verde aparece suavemente da esquerda para direita */
 
 
 /* =====================================================
@@ -178,44 +178,39 @@ nav a:hover::after {
    DICAS PARA ADICIONAR MAIS ESTILOS:
 ===================================================== */
 
-/* 
+/*
    1. Animação de fade-in (aparecer suavemente):
-   
+
    .fade-in {
        animation: fadeIn 1s ease-in;
    }
-   
+
    @keyframes fadeIn {
        from { opacity: 0; }
        to { opacity: 1; }
    }
-   
+
 
    2. Botão com efeito de pulsar:
-   
+
    .pulse-button {
        animation: pulse 2s infinite;
    }
-   
+
    @keyframes pulse {
        0%, 100% { transform: scale(1); }
        50% { transform: scale(1.05); }
    }
-   
+
 
    3. Sombra animada:
-   
+
    .glow-effect {
-       box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+       box-shadow: 0 0 20px rgba(16, 185, 129, 0.5);
        transition: box-shadow 0.3s ease;
    }
-   
+
    .glow-effect:hover {
-       box-shadow: 0 0 40px rgba(168, 85, 247, 0.8);
+       box-shadow: 0 0 40px rgba(16, 185, 129, 0.8);
    }
 */
-
-
-
-
-

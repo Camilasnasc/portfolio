@@ -18,32 +18,32 @@
 
 // Espera a página carregar completamente antes de executar
 document.addEventListener('DOMContentLoaded', function() {
-    
+
     // Seleciona TODOS os links que começam com # (exemplo: href="#inicio", href="#sobre")
     const links = document.querySelectorAll('a[href^="#"]');
-    
+
     // Para cada link encontrado, adiciona um comportamento especial
     links.forEach(link => {
-        
+
         // Quando o link for clicado...
         link.addEventListener('click', function(e) {
-            
+
             // Impede o comportamento padrão (pular instantaneamente)
             e.preventDefault();
-            
+
             // Pega o ID da seção (exemplo: se href="#sobre", targetId será "#sobre")
             const targetId = this.getAttribute('href');
-            
+
             // Encontra a seção na página usando o ID
             const targetSection = document.querySelector(targetId);
-            
+
             // Se a seção existe...
             if (targetSection) {
-                
+
                 // Calcula a posição da seção considerando a navbar fixa no topo
                 const navbarHeight = 64; // Altura da barra de navegação (64 pixels)
                 const targetPosition = targetSection.offsetTop - navbarHeight;
-                
+
                 // Rola a página suavemente até a posição calculada
                 window.scrollTo({
                     top: targetPosition,      // Posição final
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function observeElements() {
     // Seleciona todos os elementos com a classe 'fade-in-element'
     const fadeElements = document.querySelectorAll('.fade-in-element');
-    
+
     // Configura o observador de interseção
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -76,7 +76,7 @@ function observeElements() {
             if (entry.isIntersecting) {
                 // Adiciona a classe 'visible' para ativar a animação
                 entry.target.classList.add('visible');
-                
+
                 // Para de observar este elemento (animação acontece só uma vez)
                 observer.unobserve(entry.target);
             }
@@ -85,7 +85,7 @@ function observeElements() {
         threshold: 0.1,  // Ativa quando 10% do elemento está visível
         rootMargin: '0px 0px -50px 0px'  // Ativa um pouco antes de entrar totalmente
     });
-    
+
     // Observa cada elemento encontrado
     fadeElements.forEach(element => {
         observer.observe(element);
