@@ -39,6 +39,7 @@ Portfólio pessoal de página única, criado para reunir meus projetos e habilid
 - **HTML5** — estrutura semântica
 - **CSS3** — estilização personalizada e gradientes
 - **JavaScript** — interatividade, scroll suave e animações
+- **SEO básico** — meta tags, Open Graph e favicon
 - **Tailwind CSS** — framework utilitário (via CDN)
 - **Font Awesome** — ícones (via CDN)
 
@@ -46,6 +47,10 @@ Portfólio pessoal de página única, criado para reunir meus projetos e habilid
 
 | Projeto | Descrição | Stack | Status |
 |---------|-----------|-------|--------|
+| [**FindU · Achados e Perdidos**](https://projeto-eng-sftw.onrender.com/) | Aplicação web em equipe para itens perdidos e encontrados na UFLA (atuação no back-end) | JavaScript | ✅ |
+| **API de Pedidos** | API REST com JWT, Argon2, SQLAlchemy 2.0 e Alembic | Python · FastAPI | 📚 Estudo |
+| **Crooc Burger** | Cardápio digital com carrinho, taxa por bairro e pedido via WhatsApp | HTML · CSS · JavaScript | ✅ |
+| **Cheirinho Doce** | Landing page com SEO on-page e conversão via WhatsApp | HTML · CSS · JavaScript | ✅ |
 | [**Vikings vs Goblins**](https://github.com/Camilasnasc/VikingVsGoblin) | Jogo de plataforma 2D com foco em POO e herança | Java · Greenfoot | ✅ |
 | **IC · Aprendizado por Reforço** | Minigame educacional + algoritmos Dyna-Q / Dyna-Q+ (Sutton & Barto) | Python · Godot | 🔬 Em pesquisa |
 | [**Automação de Relatórios 5S**](https://github.com/Camilasnasc/automacao-relatorios-5s) | Integra Excel e Google Drive para organizar fotos e gerar indicadores | Python | ✅ |

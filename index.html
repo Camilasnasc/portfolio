@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Título que aparece na aba do navegador -->
-    <title>Camila Santos | Dev Portfolio</title>
+    <title>Camila Santos | Desenvolvedora Back-end</title>
+    <meta name="description" content="Portfólio de Camila Santos Nascimento, estudante de Sistemas de Informação na UFLA e desenvolvedora back-end em formação: Python, FastAPI, Java, C++ e automação.">
+    <meta name="theme-color" content="#022c22">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Camila Santos | Desenvolvedora Back-end">
+    <meta property="og:description" content="Projetos em Python, FastAPI, JavaScript e automação de processos. Estudante de Sistemas de Informação na UFLA.">
+    <meta property="og:url" content="https://portfolio-coral-six-60.vercel.app">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23022c22'/%3E%3Ctext x='50' y='66' font-size='48' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%2310b981'%3ECS%3C/text%3E%3C/svg%3E">
 
     <!-- Framework Tailwind CSS para estilização rápida -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -37,6 +45,13 @@
         <!-- Menu de navegação (escondido em mobile, visível em telas médias/grandes) -->
         <div class="hidden md:flex space-x-8">
             <a href="#inicio" class="text-gray-300 hover:text-emerald-accent transition">Início</a>
+            <a href="#sobre" class="text-gray-300 hover:text-emerald-accent transition">Sobre</a>
+            <a href="#projetos" class="text-gray-300 hover:text-emerald-accent transition">Projetos</a>
+            <a href="#contato" class="text-gray-300 hover:text-emerald-accent transition">Contato</a>
+        </div>
+
+        <!-- Menu em mobile: links compactos, já que o menu principal fica oculto -->
+        <div class="flex md:hidden gap-4 text-sm">
             <a href="#sobre" class="text-gray-300 hover:text-emerald-accent transition">Sobre</a>
             <a href="#projetos" class="text-gray-300 hover:text-emerald-accent transition">Projetos</a>
             <a href="#contato" class="text-gray-300 hover:text-emerald-accent transition">Contato</a>
@@ -101,7 +116,7 @@
 
                 <!-- Primeiro parágrafo: Apresentação -->
                 <p class="text-white mb-4 leading-relaxed fade-in-element" style="font-family: 'Poppins', sans-serif;">
-                    Atualmente cursando Sistemas de Informação na **UFLA**, sou apaixonada por transformar problemas em soluções através de código.
+                    Atualmente cursando Sistemas de Informação na <strong>UFLA</strong>, sou apaixonada por transformar problemas em soluções através de código.
                     Atuo como Jovem Aprendiz no <strong>Planejamento e Controle da Manutenção (PCM) da InterCement</strong>, onde desenvolvo automações do SAP GUI em Python e VBA, reduzindo trabalho manual e dando mais agilidade à tomada de decisão.
                 </p>
 
@@ -112,9 +127,16 @@
                 </p>
 
                 <!-- Tags de tecnologias -->
-                <div class="flex gap-4">
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-emerald-900/40 text-white px-3 py-1 rounded text-sm border border-emerald-800">Python</span>
+                    <span class="bg-emerald-900/40 text-white px-3 py-1 rounded text-sm border border-emerald-800">FastAPI</span>
+                    <span class="bg-emerald-900/40 text-white px-3 py-1 rounded text-sm border border-emerald-800">SQLAlchemy</span>
+                    <span class="bg-emerald-900/40 text-white px-3 py-1 rounded text-sm border border-emerald-800">JavaScript</span>
                     <span class="bg-emerald-900/40 text-white px-3 py-1 rounded text-sm border border-emerald-800">Java</span>
                     <span class="bg-emerald-900/40 text-white px-3 py-1 rounded text-sm border border-emerald-800">C++</span>
+                    <span class="bg-emerald-900/40 text-white px-3 py-1 rounded text-sm border border-emerald-800">VBA</span>
+                    <span class="bg-emerald-900/40 text-white px-3 py-1 rounded text-sm border border-emerald-800">SAP GUI</span>
+                    <span class="bg-emerald-900/40 text-white px-3 py-1 rounded text-sm border border-emerald-800">Git</span>
                 </div>
             </div>
         </div>
@@ -135,6 +157,52 @@
 
         <!-- Grid de projetos (3 colunas em desktop, 1 em mobile) -->
         <div class="grid md:grid-cols-3 gap-8">
+
+            <!-- Card: FindU -->
+            <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-xl card-hover">
+                <h3 class="text-xl font-bold mb-2 text-emerald-300">FindU · Achados e Perdidos</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                    Aplicação web em equipe que centraliza itens perdidos e encontrados na UFLA, com fotos, filtros por categoria, data e local, e contato entre quem perdeu e quem achou. Atuei no back-end.
+                </p>
+                <div class="flex flex-wrap gap-x-6 gap-y-2">
+                    <a href="https://projeto-eng-sftw.onrender.com/" target="_blank" rel="noopener" class="text-emerald-accent hover:underline flex items-center gap-2">
+                        Ver online <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card: API FastAPI -->
+            <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-xl card-hover">
+                <h3 class="text-xl font-bold mb-2 text-emerald-300">API de Pedidos · FastAPI</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                    API REST com autenticação JWT, hash de senha com Argon2, ORM SQLAlchemy 2.0 e migrations com Alembic.
+                </p>
+                <span class="text-gray-500 flex items-center gap-2 text-sm">
+                    Projeto de estudo <i class="fas fa-book"></i>
+                </span>
+            </div>
+
+            <!-- Card: Crooc Burger -->
+            <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-xl card-hover">
+                <h3 class="text-xl font-bold mb-2 text-emerald-300">Crooc Burger · Cardápio Digital</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                    Cardápio com carrinho, taxa de entrega por bairro e envio do pedido pelo WhatsApp. JavaScript puro, sem frameworks.
+                </p>
+                <span class="text-gray-500 flex items-center gap-2 text-sm">
+                    Front-end · HTML, CSS e JavaScript <i class="fas fa-code"></i>
+                </span>
+            </div>
+
+            <!-- Card: Cheirinho Doce -->
+            <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-xl card-hover">
+                <h3 class="text-xl font-bold mb-2 text-emerald-300">Cheirinho Doce · Landing Page</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                    Landing page de uma doceria artesanal focada em conversão via WhatsApp, com SEO on-page, dados estruturados e layout responsivo.
+                </p>
+                <span class="text-gray-500 flex items-center gap-2 text-sm">
+                    Front-end · HTML, CSS e JavaScript <i class="fas fa-code"></i>
+                </span>
+            </div>
 
             <!-- Card do Projeto 1: Vikings vs Goblins -->
             <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-xl card-hover">
@@ -217,17 +285,17 @@
             <!-- Ícones de redes sociais (email, GitHub, LinkedIn) -->
             <div class="flex justify-center gap-6 text-3xl">
                 <!-- Email: abre o cliente de email -->
-                <a href="mailto:camila.san.nascimento@gmail.com" class="text-emerald-300 hover:text-emerald-accent transition">
+                <a href="mailto:camila.san.nascimento@gmail.com" aria-label="Email" class="text-emerald-300 hover:text-emerald-accent transition">
                     <i class="fas fa-envelope"></i>
                 </a>
 
                 <!-- GitHub: abre em nova aba (target="_blank") -->
-                <a href="https://github.com/Camilasnasc" target="_blank" class="text-emerald-300 hover:text-emerald-accent transition">
+                <a href="https://github.com/Camilasnasc" target="_blank" rel="noopener" aria-label="GitHub" class="text-emerald-300 hover:text-emerald-accent transition">
                     <i class="fab fa-github"></i>
                 </a>
 
                 <!-- LinkedIn: abre em nova aba -->
-                <a href="https://www.linkedin.com/in/camila-santos-nascimento-84676a294/" target="_blank" class="text-emerald-300 hover:text-emerald-accent transition">
+                <a href="https://www.linkedin.com/in/camila-santos-nascimento-84676a294/" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-emerald-300 hover:text-emerald-accent transition">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
