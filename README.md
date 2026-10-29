@@ -47,15 +47,15 @@ Portfólio pessoal de página única, criado para reunir meus projetos e habilid
 
 | Projeto | Descrição | Stack | Status |
 |---------|-----------|-------|--------|
-| [**FindU · Achados e Perdidos**](https://projeto-eng-sftw.onrender.com/) | Aplicação web em equipe para itens perdidos e encontrados na UFLA (atuação no back-end) | JavaScript | ✅ |
+| **FindU · Achados e Perdidos** | Aplicação web em equipe para itens perdidos e encontrados na UFLA (atuação no back-end) | JavaScript | 🚧 Em desenvolvimento |
 | **API de Pedidos** | API REST com JWT, Argon2, SQLAlchemy 2.0 e Alembic | Python · FastAPI | 📚 Estudo |
-| **Crooc Burger** | Cardápio digital com carrinho, taxa por bairro e pedido via WhatsApp | HTML · CSS · JavaScript | ✅ |
-| **Cheirinho Doce** | Landing page com SEO on-page e conversão via WhatsApp | HTML · CSS · JavaScript | ✅ |
 | [**Vikings vs Goblins**](https://github.com/Camilasnasc/VikingVsGoblin) | Jogo de plataforma 2D com foco em POO e herança | Java · Greenfoot | ✅ |
 | **IC · Aprendizado por Reforço** | Minigame educacional + algoritmos Dyna-Q / Dyna-Q+ (Sutton & Barto) | Python · Godot | 🔬 Em pesquisa |
 | [**Automação de Relatórios 5S**](https://github.com/Camilasnasc/automacao-relatorios-5s) | Integra Excel e Google Drive para organizar fotos e gerar indicadores | Python | ✅ |
+| **Dashboard · Desempenho de Terceiros** | Avaliação e relatórios de desempenho das empresas terceirizadas (interno) | Excel · HTML | 🏢 Corporativo |
+| **Dashboard · Avaliação 5S** | Avaliação 5S da fábrica, em evolução para maior confiabilidade (interno) | Excel · HTML | 🏢 Corporativo |
 | **Automação SAP · InterCement** | Automatiza transações do SAP GUI e alimenta dashboards de manutenção | VBA · Python · Power Query | 🏢 Corporativo |
-| [**Sistema de Ingressos**](https://github.com/Camilasnasc/ingressos-main) | Gerenciamento de dados com persistência em CSV (CRUD) | C++ | 🔧 Em ajuste |
+| [**Sistema de Ingressos**](https://github.com/Camilasnasc/ingressos-main) | Gerenciamento de dados com persistência em CSV (CRUD) | C++ | ✅ |
 
 ## 📂 Estrutura
 
